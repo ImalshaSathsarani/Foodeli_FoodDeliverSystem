@@ -9,12 +9,13 @@ router.post('/add',verifyToken, isAdmin, addProducts);
 router.get('/',getFoodItems);
 router.get('/categories',getCategories);
 router.get('/price-range',getPriceRange);
+router.get('/search',searchFood);
 router.get('/:id',getFoodById);
 router.post('/upload',verifyToken,isAdmin, upload.single('image'),uploadFoodImage)
 router.put('/delete/:id',verifyToken,isAdmin,updateFoodStatus);
 router.put('/update/:id',verifyToken,isAdmin,updateFood);
 router.put('/restore/:id',verifyToken,isAdmin,restoreFoodStatus);
-router.get('/search',searchFood);
+
 
 
 export default router;

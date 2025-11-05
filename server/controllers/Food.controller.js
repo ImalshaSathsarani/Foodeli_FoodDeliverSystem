@@ -227,6 +227,8 @@ res.status(200).json({
 export const searchFood = async (req,res,next) =>{
     try{
         const { q } = req.query;
+        console.log("Search route hit with query:", req.query.q);
+
         if(!q || q.trim() === ""){
             return res.status(400).json({message:'Search query is required'});
         }
