@@ -46,5 +46,6 @@ export const sendContactMessage = async(req,res,next)=>{
 
     }catch(e){
       next(e);
+      console.error("❌ Error sending contact message:", e);
     }
 }
