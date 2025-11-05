@@ -7,7 +7,7 @@ const FoddPrediction = () => {
     const [predictions ,setPredictions] = useState([]);
 
     useEffect(()=>{
-        axios.get('http://127.0.0.1:5000/predict')
+        axios.get('https://foodeli-fooddeliversystem-1.onrender.com/predict')
         .then(response =>setPredictions(response.data))
         .catch(error => console.error('Error fetching predictions:', error));
     }, []);
