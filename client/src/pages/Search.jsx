@@ -136,8 +136,8 @@ const Search = () => {
     if (value.trim().length > 1) {
       setLoading(true);
       try {
-        const token = localStorage.getItem("foodeli-app-token");
-        const res = await searchFoodAPI(value, token);
+       // const token = localStorage.getItem("foodeli-app-token");
+        const res = await searchFoodAPI(value);
         setResults(res.data.filter(f => f._id)); // structured response
       } catch (err) {
         console.error("Search failed", err);

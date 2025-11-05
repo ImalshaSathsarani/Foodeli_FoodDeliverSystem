@@ -159,11 +159,14 @@ export const sendContactMessage =async(data)=>{
     await API.post(`/contact/email`,data)
 }
 
-export const searchFood = async(q,token)=>{
-    return await API.get(`/food/search`,{
-        params:{ q },
-        headers:{
-            Authorization:`Bearer ${token}`,
-        }
-    })
-}
+// export const searchFood = async(q,token)=>{
+//     return await API.get(`/food/search`,{
+//         params:{ q },
+//         headers:{
+//             Authorization:`Bearer ${token}`,
+//         }
+//     })
+// }
+export const searchFood = async (q) => {
+  return await API.get(`/food/search`, { params: { q } });
+};

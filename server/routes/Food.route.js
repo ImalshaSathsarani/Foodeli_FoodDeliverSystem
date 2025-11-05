@@ -14,7 +14,7 @@ router.post('/upload',verifyToken,isAdmin, upload.single('image'),uploadFoodImag
 router.put('/delete/:id',verifyToken,isAdmin,updateFoodStatus);
 router.put('/update/:id',verifyToken,isAdmin,updateFood);
 router.put('/restore/:id',verifyToken,isAdmin,restoreFoodStatus);
-router.get('/search',verifyToken,searchFood);
+router.get('/search',searchFood);
 
 
 export default router;
