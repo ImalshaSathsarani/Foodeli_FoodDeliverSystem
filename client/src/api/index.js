@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "https://foodeli-fooddeliversystem.onrender.com",
+    baseURL: "https://foodeli-fooddeliversystem.onrender.com/api",
 });
 
 //auth
