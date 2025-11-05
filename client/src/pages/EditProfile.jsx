@@ -117,7 +117,7 @@ const EditProfile = () => {
         
         
           {preview ? (
-            <img src = {preview.startsWith("blob:") ? preview:`http://localhost:5000${preview}`} 
+            <img src = {preview.startsWith("blob:") ? preview:`https://foodeli-fooddeliversystem.onrender.com${preview}`} 
             alt="Profile" 
             style=
             {{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover' }} />

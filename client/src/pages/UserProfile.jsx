@@ -26,7 +26,7 @@ const UserProfile = () => {
   const [favourites, setFavourites] = useState(null);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://foodeli-fooddeliversystem.onrender.com";
 
   const handleTabChange = (e, newValue) => {
     setTab(newValue);

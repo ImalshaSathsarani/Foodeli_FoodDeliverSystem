@@ -88,7 +88,7 @@ const MyOrders = () => {
 
     const [orders,setOrders] = useState([]);
 const [loading,setLoading] = useState(false);
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://foodeli-fooddeliversystem.onrender.com";
 const navigate = useNavigate();
 
 

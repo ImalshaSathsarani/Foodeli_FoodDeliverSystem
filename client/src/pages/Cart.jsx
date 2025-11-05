@@ -161,7 +161,7 @@ const Cart = () => {
     phoneNumber:"",
     completeAddress:"",
   });
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://foodeli-fooddeliversystem.onrender.com";
 
 
   const getProducts = async ()=>{

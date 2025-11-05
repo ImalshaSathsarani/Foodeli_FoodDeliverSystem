@@ -113,7 +113,7 @@ const OrderDetails = () => {
     const [order,setOrder] = useState(null);
     const [loading,setLoading] = useState(true);
     const stages = ['Order Placed',"Preparing","On the way","Delivered"];
-    const BASE_URL = "http://localhost:5000";
+    const BASE_URL = "https://foodeli-fooddeliversystem.onrender.com";
 
     useEffect(()=>{
         const fetchOrderDetails = async () =>{

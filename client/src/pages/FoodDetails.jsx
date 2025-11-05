@@ -130,7 +130,7 @@ const FoodDetails = () => {
   const [cartLoading, setCartLoading] = useState(false);
   const [loading, setLoading] = useState(false);
   const [product, setProduct] = useState();
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://foodeli-fooddeliversystem.onrender.com";
 
   const getproduct = async ()=>{
     setLoading(true);

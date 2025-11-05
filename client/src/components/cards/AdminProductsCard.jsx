@@ -125,7 +125,7 @@ const AdminProductsCard = ( {product}) => {
   const navigate = useNavigate();
   //const [favourite,setFavourite] = useState(false);
   //const [favouriteLoading,setFavouriteLoading] = useState(false);
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://foodeli-fooddeliversystem.onrender.com";
 
 //   const addFavourite = async () =>{
 //     setFavouriteLoading(true);

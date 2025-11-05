@@ -132,7 +132,7 @@ const UpdateFoodForm = () => {
                           severity:"success",
                       })
                   );
-      navigate(`/admin/dishes/${id}`); // redirect to foods list page
+      navigate(`https://foodeli-fooddeliversystem.onrender.com/admin/dishes/${id}`); // redirect to foods list page
     } catch (err) {
       console.error(err);
       alert("Error while updating food item");
@@ -168,7 +168,7 @@ const UpdateFoodForm = () => {
               {/* Show current image */}
               {food.img && !food.file && (
                 <img
-                  src={`http://localhost:5000${food.img}`}
+                  src={`https://foodeli-fooddeliversystem.onrender.com${food.img}`}
                   alt="food"
                   style={{
                     width: "150px",

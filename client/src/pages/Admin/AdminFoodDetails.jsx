@@ -430,7 +430,7 @@ const AdminFoodDetails = () => {
   const [ deleteLoading, setDeleteLoading] = useState(false);
   const [loading, setLoading] = useState(false);
   const [product, setProduct] = useState();
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://foodeli-fooddeliversystem.onrender.com";
   const token = localStorage.getItem("foodeli-app-token");
 
   const getproduct = async () => {
